@@ -35,4 +35,24 @@ Step completed in past course.
 Step completed in past course.
 ## Action 4: Get Help with Python Basics
 [Ask ChatGPT](https://chatgpt.com/share/686d2103-ac1c-8005-b1bf-cf3ca2ea66de)
+## Action 5: Clone the GitHub Repository for VS Code
+cd Projects
+git clone URL
+cd project file path
+code .
+## Action 6: Virtual Environment
+In a VS Code terminal in the root project folder (cintel-04-local):
 
+Run `py -m venv .venv` to create a virtual environment in the directory named .venv.   Mac/Linux may need python3 instead. Get the spacing and folder name (.venv) exactly correct. 
+
+py -m venv .venv
+## Action 7: Activate the Virtual Environment (often)
+.venv/scripts/activate
+## Action 8: Install Dependencies  (as needed)
+Install requirements.txt
+py -m pip install --upgrade pip setuptools
+py -m pip install --upgrade -r requirements.txt
+## Action 9: Commit Changes
+git add .
+git commit -m "message"
+git push
