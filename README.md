@@ -101,3 +101,15 @@ Edit the "About" section of the repository to include a link to your hosted web 
 When Finished
 
 When you finish, you should have a working, unique version of a penguin dashboard that you can work with locally on your machine and have published for free on the web. It should have several inputs including a drop down to select a column for display that works and a checkbox group for species that is used to reactively filter the species shown on the charts. It should use a reactive calc to filter the dataframe and use the filtered dataframe for your tables, grids, and charts. 
+## Action 12: Change Title and Add Favicon
+Back on your machine, in VS Code, open the new docs folder. Edit docs/index.html - find the line that has the <title> and </title> opening and closing tags. The inner text between these two tags will appear in your tab. It's currently the same for everyone. Make this unique. 
+
+Replace the title with your own short custom title - it will display in the browser tab when your app runs. 
+Add your own custom favicon  (the little icon that appears in the web browser tab) next to the title. Try https://favicon.io/Links to an external site. and create a favicon (the little icon that appears in the web browser tab) using a bit of text (e.g. PP for popper's penguins  - or better yet, your own unique icon). Download the zip file and extract the files. Take just the favicon.ico file and paste it into your docs folder.  Two changes are required:
+
+Confirm there is a favicon.ico in your docs folder. 
+Edit docs/index.html -  Just below the title line, add the following link tag like so. This code is the same for all of us - only the favicon appearance is different. If your favicon.ico has a different name or path, let VS Code help you provide the correct path. 
+
+    <title>PyShiny Penguins</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    Git commit.
