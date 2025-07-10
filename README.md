@@ -83,3 +83,21 @@ If you want to fix it, just drop a small icon named favicon.ico into the docs/ f
 
 To test: open a browser (tested with Chrome, recommended) and navigate to http://localhost:8008Links to an external site. - or whatever URL it tells you - to view the web app in the docs folder running locally.  If you make changes, refresh the page a couple times or open in an incognito tab - browsers cache (store) content for performance and changes won't always be reflected immediately. 
 Git commit.
+
+## Action 11: Publish GitHub Pages for the Repo
+This is a one-time step. We need to set up your GitHub repo (in the cloud) so that it will host with GitHub Pages. 
+
+The first time you set up an app to use Pages, navigate to the repository on GitHub and configure the settings to publish the app with GitHub Pages.
+After configuring the repository once, each time you push changes to the main branch, the app will automatically update.
+
+Go to the repository on GitHub and navigate to the **Settings** tab.
+Scroll down and click the **Pages** section down the left.
+Select branch main as the source for the site.
+Change from the root folder to the docs folder to publish from.
+Click Save and wait for the site to build.
+Eventually, be patient, your app will be published and if you scroll to the top of the Pages tab, you'll see your github.io URL for the hosted web app. Copy this to your clipboard. 
+Back on the main repo page, find the About section of the repo (kind of upper right).
+Edit the "About" section of the repository to include a link to your hosted web app by using the Pages URL. 
+When Finished
+
+When you finish, you should have a working, unique version of a penguin dashboard that you can work with locally on your machine and have published for free on the web. It should have several inputs including a drop down to select a column for display that works and a checkbox group for species that is used to reactively filter the species shown on the charts. It should use a reactive calc to filter the dataframe and use the filtered dataframe for your tables, grids, and charts. 
