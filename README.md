@@ -56,3 +56,30 @@ py -m pip install --upgrade -r requirements.txt
 git add .
 git commit -m "message"
 git push
+
+## Action 10: Build Client-Side App
+We will build the app to the docs folder of our repository and test it locally.  
+
+With your project virtual environment active in the terminal and the necessary packages installed into our .venv project virtual environment, remove any existing assets and use
+ shinylive export to build the app in the penguins folder to the docs folder:
+
+
+shiny static-assets remove
+shinylive export penguins docs
+
+After the app is built, serve the app locally from the docs folder to test before publishing to GitHub Pages.
+
+In the terminal, run the following command from the root of the project folder with the project virtual environment active:
+
+
+py -m http.server --directory docs --bind localhost 8008
+
+If you get the line: code 404, message File not found
+"GET /favicon.ico HTTP/1.1" 404 -
+
+This just means your app doesn’t have a favicon.ico file in the docs/ folder. You can ignore this unless you want to add a browser tab icon.
+
+If you want to fix it, just drop a small icon named favicon.ico into the docs/ folder.
+
+To test: open a browser (tested with Chrome, recommended) and navigate to http://localhost:8008Links to an external site. - or whatever URL it tells you - to view the web app in the docs folder running locally.  If you make changes, refresh the page a couple times or open in an incognito tab - browsers cache (store) content for performance and changes won't always be reflected immediately. 
+Git commit.
